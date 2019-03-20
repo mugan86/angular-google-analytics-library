@@ -1,8 +1,35 @@
 {
-  "name": "mugan86-google-analytics",
-  "version": "0.0.1",
+  "name": "mugan86-ng-google-analytics",
+  "version": "1.0.0",
+  "description": "Angular Library to track Google Analytics events and navigate",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mugan86/github-api-widget.git"
+  },
+  "scripts": {
+    "version.patch": "npm version patch",
+    "version.patch.build": "npm run version.patch && ng build mugan86-google-analytics",
+    "version.minor": "npm version minor",
+    "version.minor.build": "npm run version.minor && ng build mugan86-google-analytics",
+    "version.major": "npm version major",
+    "version.major.build": "npm run version.major && ng build mugan86-google-analytics",
+    "analytics.publish": "npm publish"
+  },
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
-  }
+  },
+  "keywords": [
+    "angular",
+    "google analytics",
+    "events",
+    "screens",
+    "mugan86"
+  ],
+  "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugan86/github-api-widget/issues"
+  },
+  "homepage": "https://github.com/mugan86/github-api-widget#readme"
 }

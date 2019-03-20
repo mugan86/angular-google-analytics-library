@@ -22,6 +22,11 @@ https://support.google.com/analytics/answer/1042508
 
 https://support.google.com/analytics/answer/1008080?hl=en&visit_id=636886970225453334-570640806&rd=1#trackingID
 
+### Install library
+
+```
+npm install mugan86-ng-google-analytics
+```
 ### Add the module in the module where it will be used
 
 Add in **imports** "Mugan86GoogleAnalyticsModule" and initialize with Tracking ID. Add show log optionally to show input tracking ID
@@ -58,13 +63,13 @@ For example, in app.component.html
 
 ### Check in Browser Console if script Google Analytics correct load
 
-![Image](./../../screens/library-google-analytics/1-check-ok-load-ga-scripts.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/1-check-ok-load-ga-scripts.png)
 
 ### Tracking ID Code is working Check
 
 To verify that the tracking code works, visit your website and check if the visit is recorded in the **"In real time"** reports.
 
-![Image](./../../screens/library-google-analytics/2-check-in-real-time-connect-user.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/2-check-in-real-time-connect-user.png)
 
 ### Add events to register any action
 
@@ -100,7 +105,7 @@ export class OneComponent {
 ```
 
 ### Events results in Google Analytics
-![Image](./../../screens/library-google-analytics/3-events-result.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/3-events-result.png)
 
 ## ESPAÑOL 🇪🇸
 
@@ -123,6 +128,12 @@ https://support.google.com/analytics/answer/1042508
 ### Buscar el ID de seguimiento: 
 
 https://support.google.com/analytics/answer/1008080?hl=en&visit_id=636886970225453334-570640806&rd=1#trackingID
+
+### Instalar librería
+
+```
+npm install mugan86-ng-google-analytics
+```
 
 ### Añadir el módulo en el módulo donde se usará
 
@@ -160,13 +171,13 @@ Por ejemplo, en app.component.html
 
 ### Comprobar en la consola del navegador si tenemos correctamente cargado el script
 
-![Image](./../../screens/library-google-analytics/1-check-ok-load-ga-scripts.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/1-check-ok-load-ga-scripts.png)
 
 ### Verificar que el código de seguimiento funciona
 
 Para verificar que el código de seguimiento funciona, visite su sitio web y compruebe si la visita se registra en los informes **"En tiempo real"**.
 
-![Image](./../../screens/library-google-analytics/2-check-in-real-time-connect-user.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/2-check-in-real-time-connect-user.png)
 
 ### Añadir eventos con cualquier acción
 
@@ -202,7 +213,7 @@ export class OneComponent {
 ```
 
 ### Resultados de los eventos en Google Analytics
-![Image](./../../screens/library-google-analytics/3-events-result.png)
+![Image](https://raw.githubusercontent.com/mugan86/angular-google-analytics-library/master/screens/library-google-analytics/3-events-result.png)
 
 
 ## Authors
