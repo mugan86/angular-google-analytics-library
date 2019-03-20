@@ -100,7 +100,7 @@ export class OneComponent {
 ```
 
 ### Events results in Google Analytics
-![Image](./../../screens/library-google-analytics/3-event-result.png)
+![Image](./../../screens/library-google-analytics/3-events-result.png)
 
 ## ESPAÑOL 🇪🇸
 
@@ -209,7 +209,7 @@ export class OneComponent {
 
 * **Anartz Mugika Ledo** - *Initial work* - [mugan86](https://github.com/mugan86)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/mugan86/angular-google-analytics-library/contributors) who participated in this project.
 
 ## License
 
