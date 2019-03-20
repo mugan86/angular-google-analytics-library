@@ -1,3 +1,4 @@
+import { Mugan86GoogleAnalyticsModule } from './../../projects/mugan86-google-analytics/src/lib/mugan86-google-analytics.module';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,6 +21,12 @@ export const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    Mugan86GoogleAnalyticsModule.forRoot(
+      {
+        analyticsId: 'UA-57700600-14',
+        showLog: true
+      }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

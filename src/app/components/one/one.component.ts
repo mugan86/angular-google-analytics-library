@@ -12,7 +12,7 @@ export class OneComponent {
 
   sendLikeEvent() {
     // We call the event emmiter function from our service and pass in the details
-    this.googleAnalyticsService.eventEmitter('userPage', 'like', 'userLabel', 1);
+    this.googleAnalyticsService.eventEmitter('userPage', 'Follow User', 'userLabel', 1);
   }
 
 }

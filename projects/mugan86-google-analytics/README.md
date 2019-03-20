@@ -1,24 +1,74 @@
-# Mugan86GoogleAnalytics
+# Mugan86 Angular Google Analytics Library
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+## ENGLISH 🇬🇧
 
-## Code scaffolding
+## What is Google Analytics?
 
-Run `ng generate component component-name --project mugan86-google-analytics` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project mugan86-google-analytics`.
-> Note: Don't forget to add `--project mugan86-google-analytics` or else it will be added to the default project in your `angular.json` file. 
+ It is a tool that offers grouped information of the traffic that arrives at the websites according to the audience, the acquisition, the behavior and the conversions that are carried out on the website.
 
-## Build
+## Objective of the library
 
-Run `ng build mugan86-google-analytics` to build the project. The build artifacts will be stored in the `dist/` directory.
+The objective of this library is to make available to users an implementation to configure the Analytics section easily in an Angular application.
 
-## Publishing
+## Instructions to use library
 
-After building your library with `ng build mugan86-google-analytics`, go to the dist folder `cd dist/mugan86-google-analytics` and run `npm publish`.
+### Create a tracking property in Google Analytics
 
-## Running unit tests
+https://support.google.com/analytics/answer/1042508
 
-Run `ng test mugan86-google-analytics` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Find the tracking ID: 
 
-## Further help
+https://support.google.com/analytics/answer/1008080?hl=en&visit_id=636886970225453334-570640806&rd=1#trackingID
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Add Module in Application Module
+
+Add in imports "Mugan86GoogleAnalyticsModule" and initialize with Tracking ID. Add show log optionally to show input tracking ID
+
+```
+@NgModule({
+  declarations: [
+    AppComponent,
+    OneComponent,
+    TwoComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
+    Mugan86GoogleAnalyticsModule.forRoot(
+      {
+        analyticsId: 'UA-57700600-14',
+        showLog: true
+      }
+    )
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+### Add analytics component in app-root component template
+
+For example, in app.component.html
+```
+<mga-google-analytics></mga-google-analytics>
+```
+
+### Check in Browser Console if script Google Analytics correct load
+
+![Image](./../../screens/library-google-analytics/1-check-ok-load-ga-scripts.png)
+
+## ESPAÑOL 🇪🇸
+
+## What is Google Analytics?
+
+Es una herramienta que ofrece información agrupada del tráfico que llega a los sitios web según la audiencia, la adquisición, el comportamiento y las conversiones que se llevan a cabo en el sitio web.
+
+## Objective of the library
+
+El objetivo de esta biblioteca es poner a disposición de los usuarios una implementación para configurar fácilmente la sección de Google Analytics en una aplicación Angular.
+
+## Instrucciones de uso de la librería
+
+* Crear una propiedad de segumiento en Google Analytics: https://support.google.com/analytics/answer/1042508
+* Encontrar el ID del segumiento: https://support.google.com/analytics/answer/1008080?hl=es-419&visit_id=636886970225453334-570640806&rd=1#trackingID
