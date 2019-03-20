@@ -202,7 +202,7 @@ export class OneComponent {
 ```
 
 ### Resultados de los eventos en Google Analytics
-![Image](./../../screens/library-google-analytics/3-event-result.png)
+![Image](./../../screens/library-google-analytics/3-events-result.png)
 
 
 ## Authors
