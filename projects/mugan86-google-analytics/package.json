@@ -4,7 +4,7 @@
   "description": "Angular Library to track Google Analytics events and navigate",
   "repository": {
       "type": "git",
-      "url": "git+https://github.com/mugan86/github-api-widget.git"
+      "url": "git+https://github.com/mugan86/angular-google-analytics-library.git"
   },
   "scripts": {
     "version.patch": "npm version patch",
@@ -29,7 +29,7 @@
   "author": "Anartz Mugika Ledo <mugan86@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mugan86/github-api-widget/issues"
+    "url": "https://github.com/mugan86/angular-google-analytics-library/issues"
   },
-  "homepage": "https://github.com/mugan86/github-api-widget#readme"
+  "homepage": "https://github.com/mugan86/angular-google-analytics-library/tree/master/projects/mugan86-google-analytics#mugan86-angular-google-analytics-library"
 }
