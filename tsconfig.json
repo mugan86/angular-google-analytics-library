@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "mugan86-google-analytics": [
+        "dist/mugan86-google-analytics"
+      ],
+      "mugan86-google-analytics/*": [
+        "dist/mugan86-google-analytics/*"
+      ]
+    }
   }
 }
