@@ -66,6 +66,41 @@ To verify that the tracking code works, visit your website and check if the visi
 
 ![Image](./../../screens/library-google-analytics/2-check-in-real-time-connect-user.png)
 
+### Add events to register any action
+
+To register random action, we need add a component to register event
+
+**one.component.ts**
+```
+import { Component } from '@angular/core';
+import { GoogleAnalyticsService } from 'mugan86-google-analytics';
+
+@Component({
+  selector: 'app-one',
+  templateUrl: './one.component.html',
+  styleUrls: ['./one.component.css']
+})
+export class OneComponent {
+
+  constructor(public googleAnalyticsService: GoogleAnalyticsService) { }
+
+  sendLikeEvent() {
+    // We call the event emmiter function from our service and pass in the details
+    this.googleAnalyticsService.eventEmitter('userPage', 'Follow User', 'userLabel', 1);
+  }
+
+}
+```
+
+**one.component.html**
+```
+<button (click)="sendLikeEvent()">
+  Like
+</button>
+```
+
+### Events results in Google Analytics
+![Image](./../../screens/library-google-analytics/3-event-result.png)
 
 ## ESPAÑOL 🇪🇸
 
@@ -132,4 +167,51 @@ Por ejemplo, en app.component.html
 Para verificar que el código de seguimiento funciona, visite su sitio web y compruebe si la visita se registra en los informes **"En tiempo real"**.
 
 ![Image](./../../screens/library-google-analytics/2-check-in-real-time-connect-user.png)
+
+### Añadir eventos con cualquier acción
+
+Para registrar una acción (evento) aleatoria, necesitamos un componente para registrar el evento deseado
+
+**one.component.ts**
+```
+import { Component } from '@angular/core';
+import { GoogleAnalyticsService } from 'mugan86-google-analytics';
+
+@Component({
+  selector: 'app-one',
+  templateUrl: './one.component.html',
+  styleUrls: ['./one.component.css']
+})
+export class OneComponent {
+
+  constructor(public googleAnalyticsService: GoogleAnalyticsService) { }
+
+  sendLikeEvent() {
+    // We call the event emmiter function from our service and pass in the details
+    this.googleAnalyticsService.eventEmitter('userPage', 'Follow User', 'userLabel', 1);
+  }
+
+}
+```
+
+**one.component.html**
+```
+<button (click)="sendLikeEvent()">
+  Like
+</button>
+```
+
+### Resultados de los eventos en Google Analytics
+![Image](./../../screens/library-google-analytics/3-event-result.png)
+
+
+## Authors
+
+* **Anartz Mugika Ledo** - *Initial work* - [mugan86](https://github.com/mugan86)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](./../../LICENSE.md) file for details
 
