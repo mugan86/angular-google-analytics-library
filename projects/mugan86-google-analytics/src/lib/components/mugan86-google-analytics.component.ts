@@ -5,14 +5,19 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'mga-google-analytics',
   template: `
-    <p>
-      mugan86-google-analytics works!
+    <p *ngIf="showLog">
+      Analytics with {{ analiticsId }} track ID
     </p>
   `,
   styles: []
 })
 export class Mugan86GoogleAnalyticsComponent implements OnInit, AfterContentChecked {
-  constructor(private gaConfig: GaConfigService, private router: Router) { }
+  showLog: boolean;
+  analiticsId: string;
+  constructor(private gaConfig: GaConfigService, private router: Router) {
+    this.showLog = this.gaConfig.showLog;
+    this.analiticsId = this.gaConfig.analiticsId;
+  }
 
   // https://stackoverflow.com/a/45917264
   ngOnInit() {

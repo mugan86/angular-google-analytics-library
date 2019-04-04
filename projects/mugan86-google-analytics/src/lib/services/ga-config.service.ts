@@ -6,9 +6,11 @@ import { Config } from '../interfaces/config.interface';
 })
 export class GaConfigService {
   analiticsId: string;
+  showLog: boolean;
   constructor(@Inject('analyticsConfig') private analytics: Config) {
     this.analiticsId = this.analytics.analyticsId;
-    if (this.analytics.showLog) {
+    this.showLog = this.analytics.showLog;
+    if (this.showLog) {
       console.log('Analytics ID: ', this.analiticsId);
     }
   }

@@ -2,10 +2,12 @@ import { Config } from './interfaces/config.interface';
 import { GaConfigService } from './services/ga-config.service';
 import { NgModule } from '@angular/core';
 import { Mugan86GoogleAnalyticsComponent } from './components/mugan86-google-analytics.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [Mugan86GoogleAnalyticsComponent],
   imports: [
+    CommonModule
   ],
   exports: [Mugan86GoogleAnalyticsComponent]
 })
