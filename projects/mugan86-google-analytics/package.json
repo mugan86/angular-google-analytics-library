@@ -1,6 +1,6 @@
 {
   "name": "mugan86-ng-google-analytics",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Angular Library to track Google Analytics events and navigate",
   "repository": {
     "type": "git",

@@ -32,6 +32,8 @@ npm install mugan86-ng-google-analytics
 Add in **imports** "Mugan86GoogleAnalyticsModule" and initialize with Tracking ID. Add show log optionally to show input tracking ID
 
 ```
+import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +80,7 @@ To register random action, we need add a component to register event
 **one.component.ts**
 ```
 import { Component } from '@angular/core';
-import { GoogleAnalyticsService } from 'mugan86-google-analytics';
+import { GoogleAnalyticsService } from 'mugan86-ng-google-analytics';
 
 @Component({
   selector: 'app-one',
@@ -140,6 +142,8 @@ npm install mugan86-ng-google-analytics
 Añadir en la propiedad **imports** "Mugan86GoogleAnalyticsModule" e inicializar con la propiedad. La propiedad para mostrar el ID de seguimiento es opcional.
 
 ```
+import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -186,7 +190,7 @@ Para registrar una acción (evento) aleatoria, necesitamos un componente para re
 **one.component.ts**
 ```
 import { Component } from '@angular/core';
-import { GoogleAnalyticsService } from 'mugan86-google-analytics';
+import { GoogleAnalyticsService } from 'mugan86-ng-google-analytics';
 
 @Component({
   selector: 'app-one',
