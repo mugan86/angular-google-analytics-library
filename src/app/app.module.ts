@@ -1,4 +1,4 @@
-import { Mugan86GoogleAnalyticsModule } from './../../projects/mugan86-google-analytics/src/lib/mugan86-google-analytics.module';
+import { Mugan86GoogleAnalyticsModule } from './../../projects/mugan86-ng-google-analytics/src/public-api';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

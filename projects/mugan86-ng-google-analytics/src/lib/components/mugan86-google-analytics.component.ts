@@ -1,5 +1,5 @@
-import { GaConfigService } from './../services/ga-config.service';
-import { Component, OnInit, AfterViewInit, AfterContentChecked } from '@angular/core';
+import { GaConfigService } from '../services/ga-config.service';
+import { Component, OnInit, AfterContentChecked } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({

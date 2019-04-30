@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GoogleAnalyticsService } from 'projects/mugan86-google-analytics/src/lib/services/google-analytics.service';
+import { GoogleAnalyticsService } from 'projects/mugan86-ng-google-analytics/src/lib/services/google-analytics.service';
 
 @Component({
   selector: 'app-one',

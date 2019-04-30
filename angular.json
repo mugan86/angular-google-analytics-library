@@ -131,33 +131,33 @@
         }
       }
     },
-    "mugan86-google-analytics": {
-      "root": "projects/mugan86-google-analytics",
-      "sourceRoot": "projects/mugan86-google-analytics/src",
+    "mugan86-ng-google-analytics": {
+      "root": "projects/mugan86-ng-google-analytics",
+      "sourceRoot": "projects/mugan86-ng-google-analytics/src",
       "projectType": "library",
       "prefix": "mga",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/mugan86-google-analytics/tsconfig.lib.json",
-            "project": "projects/mugan86-google-analytics/ng-package.json"
+            "tsConfig": "projects/mugan86-ng-google-analytics/tsconfig.lib.json",
+            "project": "projects/mugan86-ng-google-analytics/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mugan86-google-analytics/src/test.ts",
-            "tsConfig": "projects/mugan86-google-analytics/tsconfig.spec.json",
-            "karmaConfig": "projects/mugan86-google-analytics/karma.conf.js"
+            "main": "projects/mugan86-ng-google-analytics/src/test.ts",
+            "tsConfig": "projects/mugan86-ng-google-analytics/tsconfig.spec.json",
+            "karmaConfig": "projects/mugan86-ng-google-analytics/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/mugan86-google-analytics/tsconfig.lib.json",
-              "projects/mugan86-google-analytics/tsconfig.spec.json"
+              "projects/mugan86-ng-google-analytics/tsconfig.lib.json",
+              "projects/mugan86-ng-google-analytics/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
